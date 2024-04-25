@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Sign Up | Log In</title>
+  <link rel="stylesheet" href="css/style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title-text">
+      <div class="title login">
+        Account 
+      </div>
+      <div class="title signup">
+        Account
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="slide-controls">
+        <input type="radio" name="slide" id="login" checked>
+        <input type="radio" name="slide" id="signup">
+        <label for="login" class="slide login">Login</label>
+        <label for="signup" class="slide signup">SignUp</label>
+        <div class="slider-tab"></div>
+      </div>
+      <div class="form-inner">
+        <form action="/login" class="login" method="post">
+            <div class="field">
+              <p>Email: </p>
+            <input type="email" name="Uemail" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <p>Password: </p>
+            <input type="password" name="upassword" placeholder="Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="Login">
+          </div>
+          <div class="signup-link">
+            Don't Have Account? <a href="signup.html">Create A New</a>
+          </div>
+        </form>
+        <form action="/register" class="signup" method="post">
+          <div class="field">
+            <p>Email: </p>
+            <input type="email" name="emailAddress" placeholder="Email Address" required>
+          </div>
+          <div class="field">
+            <p>First Name: </p>
+            <input type="text" name="firstName" placeholder="First Name" required>
+          </div>
+          <div class="field">
+            <p>Last Name: </p>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+          </div>
+          <br/>
+          <div class="field">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="field">
+            <p>Phone Number</p>
+            <input type="tel" minlength="10" maxlength="10" name="phone" placeholder="Phone number" required>
+          </div>
+          <div class="field">
+            <p>Password :</p>
+            <input type="password" name="Password" placeholder="Password" required>
+          </div>
+          <div class="field">
+            <p>Confirm Password: </p>
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required>
+          </div>
+          <div class="field btn">
+            <div class="btn-layer"></div>
+            <input type="submit" value="SignUp">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="css/style.js"></script>
+  <script>
+    // Parse the query string to get the alert message
+    const params = new URLSearchParams(window.location.search);
+    const alertMessage = params.get('alert');
+
+    // Display an alert message based on the query parameter
+    if (alertMessage === 'login_success') {
+        alert('Login successful!');
+    } else if (alertMessage === 'incorrect_credentials') {
+        alert('Incorrect email or password.');
+    } else if (alertMessage === 'user_not_found') {
+        alert('User not found.');
+    }
+</script>
+
+</body>
+</html>

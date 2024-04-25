@@ -1,0 +1,110 @@
+body{
+    overflow: hidden;
+    background-image: linear-gradient(to bottom right, #8d30f1, #53e3a6);
+    background-attachment: fixed;
+    min-height: 100vh;
+    overflow-y: scroll;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    /* font-weight: 100; */
+    font-style: normal;
+  }
+  .navbar {
+    position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      top:0%;
+      height: 80px;
+      padding: 10px 20px;
+      /* background: red; */
+      z-index: 1;
+      width: 100%;
+      gap:10px;
+    }
+    .logo{
+  position: absolute;
+  display: flex;
+  left: 5%;
+    }
+    
+    .logo img {
+      height: 70px;
+      border-radius: 100%;
+    }
+    
+    .nav-buttons {
+      position: absolute;
+      display: flex; 
+      right: 5%;
+    }
+    
+    .nav-buttons button {
+      font-size: 20px;
+      padding: 10px 20px; 
+      margin-right: 10px; 
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer; 
+    }
+    .nav-buttons button:hover {
+      background-color: rgba(0, 0, 0, 0.902);
+      border-radius: 30px;
+    }
+    
+    .nav-buttons button:last-child {
+      margin-right: 0; 
+    }
+    
+    .nav-buttons input[type="text"] {
+      padding: 10px;
+      font-size: 20px;
+      width: 500px;
+      height: 20px; 
+      border-radius: 50px;
+      border: 1px solid #fff; 
+      color: #fff; 
+    }
+    
+    .dropdown {
+      display: inline-block;
+      position: relative; 
+    }
+    
+    .dropdown-content {
+      display: none; 
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px; 
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1; 
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  
+    .dropdown:hover button {
+      background-color: rgba(0, 0, 0, 0.88);
+    }
+  
+.container{
+    position: absolute;
+    padding-left: 10px;
+    border-radius: 40px;
+    top: 15%;
+    width: 60vw;
+    background-color: white;
+}

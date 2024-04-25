@@ -1,0 +1,406 @@
+body{
+  overflow: hidden;
+  background: #1c2023;
+  min-height: 100vh;
+  overflow-y: scroll;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 100; */
+  font-style: normal;
+}
+.navbar {
+  position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top:0%;
+    height: 80px;
+    padding: 10px 20px;
+     background: linear-gradient(to bottom, red, transparent); 
+    /* background: red; */
+    z-index: 1;
+    width: 100%;
+    gap:10px;
+  }
+  .logo{
+position: absolute;
+display: flex;
+left: 5%;
+  }
+  
+  .logo img {
+    height: 70px;
+    border-radius: 100%;
+  }
+  
+  .nav-buttons {
+    position: absolute;
+    display: flex; 
+    right: 5%;
+  }
+  
+  .nav-buttons button {
+    font-size: 20px;
+    padding: 10px 20px; 
+    margin-right: 10px; 
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; 
+  }
+  .nav-buttons button:hover {
+    background-color: rgba(0, 0, 0, 0.902);
+    border-radius: 30px;
+  }
+  
+  .nav-buttons button:last-child {
+    margin-right: 0; 
+  }
+  
+  .nav-buttons input[type="text"] {
+    padding: 10px;
+    font-size: 20px;
+    width: 500px;
+    height: 20px; 
+    border-radius: 50px;
+    border: 1px solid #fff; 
+    color: #fff; 
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative; 
+  }
+  
+  .dropdown-content {
+    display: none; 
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; 
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown:hover button {
+    background-color: rgba(0, 0, 0, 0.88);
+  }
+
+  .slider {
+    position: absolute;
+    top:0px;
+    z-index: -1;
+    width: 99vw;
+    height: 95vh;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slide {
+    display: none;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    
+  }
+
+ .slide.active {
+    display: block;
+    object-fit: cover;
+    
+  } 
+  .head-name{
+    position: absolute;
+    display: flex;
+    color: white;
+    z-index: 1;
+    font-size: 44px;
+    top:35%;
+    left:5%;
+    width: 35%;
+  }
+  .des{
+    position: absolute;
+    display: flex;
+    color: white;
+    z-index: 1;
+    font-size: 18px;
+    top:53%;
+    left:5%;
+    width: 20%;
+  }
+.top{
+  position: absolute;
+  top:82%;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  background: linear-gradient(to left, red, transparent); 
+/* background: red; */
+
+  h1{
+    color: white;
+    margin-left: 100px;
+  }
+}
+  .top_selection {
+    position: absolute;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    /* Example background color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000; /* Example text color */
+    overflow-x: scroll;
+    overflow-y: hidden;
+
+}
+.top_selection::-webkit-scrollbar {
+  display: none;
+}
+.top_selection_img{
+  position: relative;
+  top:50%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: auto;
+  height: auto;
+}
+.top_selection_img :hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.play {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  opacity: 0; /* Initially hide the play button */
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+.play :hover{
+  cursor:pointer;
+}
+
+.top_selection_img:hover .play {
+  opacity: 1; /* Show the play button on hover */
+}
+.pbtn {
+  position: absolute;
+  top: 72%;
+  font-size: 32px;
+  width: 200px;
+  height: 70px;
+  border: none;
+  border-radius: 10px;
+  left: 5%;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.pbtn span {
+  font-size: 44px;
+}
+
+.scifi{
+  position: absolute;
+  top:125%;
+  width: 100%;
+  background: linear-gradient(to left, red, transparent); 
+  h1{
+    color: white;
+    margin-left: 100px;
+  }
+}
+
+.sci_fi{
+  position: absolute;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    /* Example background color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.sci_fi::-webkit-scrollbar {
+  display: none;
+}
+.scifi_img{
+  position: relative;
+  top:50%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.scifi_img :hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.scifi_img:hover .play {
+  opacity: 1; /* Show the play button on hover */
+}
+
+.Horror{
+  position: absolute;
+  top:165%;
+  width: 100%;
+  background: linear-gradient(to left, red, transparent); 
+
+  h1{
+    color: white;
+    margin-left: 100px;
+  }
+}
+
+.horror{
+  position: absolute;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    /* Example background color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.horror::-webkit-scrollbar {
+  display: none;
+}
+
+.horror_img{
+  position: relative;
+  top:50%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.horror_img :hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.horror_img:hover .play{
+  opacity: 1;
+}
+
+.Anime{
+  position: absolute;
+  top:205%;
+  width: 100%;
+  background: linear-gradient(to left, red, transparent); 
+
+  h1{
+    color: white;
+    margin-left: 100px;
+  }
+}
+
+.anime{
+  position: absolute;
+    /* Adjust as needed */
+    display: flex;
+    flex-direction: row;
+    /* Example background color */
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    color: #000;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.anime::-webkit-scrollbar {
+  display: none;
+}
+.anime_img{
+  position: relative;
+  top:50%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+
+.anime_img :hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.anime_img:hover .play{
+  opacity: 1;
+}
+
+.watchlist {
+  position: absolute;
+  top: 50%;
+  left: 82%;
+  opacity: 0; /* Initially hide the play button */
+  transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+.watchlist :hover{
+  cursor:pointer;
+}
+.top_selection_img:hover .watchlist{
+  opacity: 1;
+}
+
+.anime_img:hover .watchlist{
+  opacity: 1;
+}
+.scifi_img:hover .watchlist{
+  opacity: 1;
+}
+.horror_img:hover .watchlist{
+  opacity: 1;
+}
+
+.watchlist-section{
+  position: absolute;
+  top:245%;
+  width: 100%;
+  /* background: linear-gradient(to left, red, transparent);  */
+
+  h1{
+    color: white;
+    margin-left: 100px;
+  }
+}
+
+.watchlist_added{
+    position: relative;
+    top:50%;
+    display: flex;
+    flex-direction: row;
+    padding: 10px; 
+}
+.remove{
+  position: relative;
+  top: -20px;
+}
+.wplay{
+  position: relative;
+  top: -20px;
+}

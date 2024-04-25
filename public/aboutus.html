@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/aboutus.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="2.jpeg" alt="Logo">
+        </div>
+        <div class="nav-buttons">
+            <input type="text" id="search" placeholder="Search..." >
+            <button id="Searchbtn">Search</button>
+          <a href="home.html"><button id="home">Home</button></a>
+          <a href="aboutus.html"><button id="about">About Us</button></a>
+          <button id="Horror">Horror</button>
+          <div class="dropdown">
+            <button id="account">Account</button>
+            <div class="dropdown-content">
+              <a href="#">Settings</a>
+              <a href="http://localhost:4200/" target="_blank" >My subscription</a>
+              <a href="/?alert=acount deleted" id="delete-account-link">Delete Account</a>
+              <a href="/?alert=logout_success">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <div class="container">
+    <h1>Welcome to AniWatch!</h1>
+    <p>At AniWatch, we're not just another anime website—we're your ultimate destination for everything anime. Whether you're a die-hard otaku, a casual viewer, or just looking for your next favorite series, we've got you covered.</p>
+    <h1>Our Mission</h1>
+    <p>Our mission at AniWatch is simple: to celebrate the art of anime and provide a platform where anime enthusiasts can connect, explore, and indulge in their passion for animated series. We strive to curate a diverse selection of anime, from timeless classics to the latest releases, ensuring there's something for everyone to enjoy.</p>
+    <h1>What We Offer</h1>
+    <p><strong>Anime and Movies Database:</strong> Dive into our extensive anime and movies database, where you can discover information about thousands of series across various genres, decades, and styles. Whether you're researching your favorite studio's works or exploring hidden gems, our database is your go-to resource.</p>
+    <h1>Latest News and Reviews</h1>
+    <p>Stay up-to-date with the latest happenings in the world of anime and movies through our curated selection of news articles, reviews, and editorials. From in-depth analyses of popular series to breaking news about upcoming releases, we've got the scoop.</p>
+    <h1>Interactive Community</h1>
+    <p>Join our vibrant community of anime lovers from around the globe. Engage in discussions, share recommendations, participate in polls, and connect with fellow otakus who share your passion for all things anime.</p>
+    <h1>Personalized Recommendations</h1>
+    <p>Let us be your anime matchmaker! Our personalized recommendation engine suggests series tailored to your unique tastes and preferences, ensuring you never run out of great anime to watch.</p>
+    <h1>Why Choose AniWatch?</h1>
+    <p><strong>Passion for Anime and movies:</strong>We're more than just a website—we're a team of dedicated anime enthusiasts and movie enthusiasts who are deeply passionate about the art form. Our love for anime and movies is what drives us to deliver the best possible experience to our users.</p>
+    <p><strong>User-Focused Experience:</strong>Your satisfaction is our top priority. We're constantly striving to enhance your experience on AniWatch, whether it's through improving our website's functionality, expanding our anime database, or implementing new features based on your feedback.</p>
+    <p><strong>Unrivaled Content:</strong>With a wealth of information, insights, and entertainment at your fingertips, AniWatch is your one-stop destination for all things anime. Whether you're a casual viewer or a hardcore otaku, there's something here for everyone.</p>
+    <h1>Get Started Today!</h1>
+    <p>Ready to embark on your anime journey? Join us at AniWatch and experience the magic of anime like never before. Whether you're looking for inspiration, information, or just some good old-fashioned anime trivia, you'll find it all right here. Welcome to AniWatch—where the adventure begins!</p>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+
+    function scrollToHorrorSection() {
+        const horrorSection = document.querySelector('.Horror');
+        horrorSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    const horrorButton = document.getElementById('Horror');
+    horrorButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        if (window.location.pathname !== '/home.html') {
+            window.location.href = '/home.html';
+        } else {
+            scrollToHorrorSection();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>

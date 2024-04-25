@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="/Sign-Up-and-Login-Page-main/src/app.js">
+  <link rel="stylesheet" href="css/script.js">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">
+      <img src="2.jpeg" alt="Logo">
+    </div>
+    <div class="nav-buttons">
+        <input type="text" id="search" placeholder="Search..." >
+        <button id="Searchbtn">Search</button>
+      <a href="home.html"><button id="home">Home</button></a>
+      <a href="aboutus.html"><button id="about">About Us</button></a>
+          <button id="Horror">Horror</button>
+      <div class="dropdown">
+        <button id="account">Account</button>
+        <div class="dropdown-content">
+          <a href="#">Settings</a>
+          <a href="http://localhost:4200/" target="_blank" >My subscription</a>
+          <a href="/?alert=acount deleted" id="delete-account-link">Delete Account</a>
+          <a href="/?alert=logout_success">Logout</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="slider">
+    <h1 class="head-name"></h1>
+    <p class="des"></p>
+    
+    <video class="slide active" autoplay>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video class="slide" autoplay>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <video class="slide" autoplay>
+        <source src="video1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</div>
+<a href="video1.html">
+  <button class="pbtn">
+    <span>▶</span>&nbsp;&nbsp;&nbsp;&nbsp;Play
+  </button>
+</a>
+<div class="top">
+<h1>Top Selection for You</h1>
+<div class="top_selection">
+  <div class="top_selection_img">
+    <img src="./favorite/a.jpg" alt=""/>
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <form action="/play-movie" method="POST">
+          <button type="submit" class="btn_i b4_i">▶ Play</button>
+      </form>
+  </div>
+  
+  </div>
+  <div class="top_selection_img">
+    <img src="./favorite/b.jpg" alt=""/>
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="top_selection_img">
+    <img src="./favorite/c.jpg" alt=""/>
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="top_selection_img">
+    <img src="./favorite/d.jpg" alt=""/>
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="top_selection_img">
+    <img src="./favorite/e.jpg" alt=""/>
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="scifi">
+<h1>Sci-Fi & Fantasy</h1>
+<div class="sci_fi">
+  <div class="scifi_img">
+    <img src="./favorite/s1.jpg" width="350px">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+    <a href="video1.html"><a href="video1.html"><button class="btn_i b4_i">▶Play</button></a></a>
+  </div>
+  </div>
+  <div class="scifi_img">
+    <img src="./favorite/s2.jpg" width="350px" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="scifi_img">
+    <img src="./favorite/s3.jpg" width="350px" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="scifi_img">
+    <img src="./favorite/s4.avif" width="350px" height="225px" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="Horror">
+<h1>Horror</h1>
+<div class="horror">
+  <div class="horror_img">
+    <img src="./favorite/f.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+  <div class="play">
+    <a href="video2.html"><a href="video1.html"><button class="btn_i b4_i">▶Play</button></a></a>
+  </div>
+  </div>
+  <div class="horror_img">
+    <img src="./favorite/h2.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="horror_img">
+    <img src="./favorite/h3.jpg" style="width: 350px;height: 220px;" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="horror_img">
+    <img src="./favorite/a.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="horror_img">
+    <img src="./favorite/e.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+</div>
+</div>
+<div class="Anime">
+<h1>Anime</h1>
+<div class="anime">
+  <div class="anime_img">
+    <img src="./favorite/a1.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+    <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+  </div>
+  </div>
+  <div class="anime_img">
+    <img src="./favorite/a2.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+  <div class="anime_img">
+    <img src="./favorite/a3.jpg" alt="">
+    <div class="watchlist">
+      <button>&#10133;</button>
+    </div>
+    <div class="play">
+      <a href="video1.html"><button class="btn_i b4_i">▶Play</button></a>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="watchlist-section">
+  <h1>Watchlist</h1>
+  <div class="watchlist_added">
+    
+  </div>
+</div>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            if (i === index) {
+                slide.classList.add('active');
+                if (slide.tagName.toLowerCase() === 'video') {
+                    setTimeout(() => {
+                        slide.play();
+                    });
+                }
+                if (index === 0) {
+                document.querySelector('.head-name').textContent = "Marvels Guardian's of the Galaxy";
+                document.querySelector('.des').textContent = "A group of intergalactic criminals must pull together to stop a fanatical warrior with plans to purge the universe.";
+                document.querySelector('.head-name').style.display = 'block';
+                document.querySelector('.des').style.display = 'block';
+            } else if (index === 1) {
+                document.querySelector('.head-name').textContent = 'Nun II';
+                document.querySelector('.des').textContent = '1956 - France. A priest is murdered. An evil is spreading. The sequel to the worldwide smash hit follows Sister Irene as she once again comes face-to-face with Valak, the demon nun.';
+                document.querySelector('.head-name').style.display = 'block';
+                document.querySelector('.des').style.display = 'block';
+            }
+            else if (index === 2) {
+                document.querySelector('.head-name').textContent = 'Tales of Arise';
+                document.querySelector('.des').textContent = "What is the Tales of Arise story? The story of Tales of Arise revolves around Rena, which has ruled over Dahna for 300 years, plundering the planet's resources and robbing its inhabitants of their independence and dignity.";
+                document.querySelector('.head-name').style.display = 'block';
+                document.querySelector('.des').style.display = 'block';
+            }
+            
+            } else {
+                slide.classList.remove('active');
+                if (slide.tagName.toLowerCase() === 'video') {
+                    slide.pause();
+                }
+            }
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+
+    showSlide(currentSlide);
+
+    slides.forEach((slide, index) => {
+        if (slide.tagName.toLowerCase() === 'video') {
+            slide.addEventListener('ended', () => {
+                currentSlide = (index + 1) % slides.length;
+                showSlide(currentSlide);
+            });
+        }
+    });
+
+    window.onload = function() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const alertType = urlParams.get('alert');
+      
+      if (alertType === 'login_success') {
+        alert('Successful login');
+      }
+      if (alertType === 'logout_success') {
+        alert('Successful logout');
+      }
+    };
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const watchlistButtons = document.querySelectorAll('.watchlist button');
+
+    watchlistButtons.forEach(button => {
+      button.addEventListener('click', function() {
+        const movieImage = button.parentElement.previousElementSibling;
+        const movieTitle = movieImage.alt;
+
+        const watchlistItem = document.createElement('div');
+        watchlistItem.classList.add('top_selection_img');
+        watchlistItem.innerHTML = `
+          <img src="${movieImage.src}" alt="${movieTitle}">
+          <div class="watchlist">
+            </div>
+            <div class="play">
+              <button class="remove">&#10006;</button>
+            <button class="wplay">▶Play</button>
+          </div>
+        `;
+        
+       const watchlistSection = document.querySelector('.watchlist-section .watchlist_added');
+        watchlistSection.appendChild(watchlistItem);
+        watchlistSection.addEventListener('click', function(event) {
+        const removeButton = event.target.closest('.remove');
+        if (removeButton) {
+          const watchlistItem = removeButton.closest('.top_selection_img');
+          watchlistItem.remove();
+        }
+      });
+      });
+    });
+  });
+  document.addEventListener('DOMContentLoaded', function() {
+    function scrollToHorrorSection() {
+        const horrorSection = document.querySelector('.Horror');
+        horrorSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    
+    const horrorButton = document.getElementById('Horror');
+
+    horrorButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        if (window.location.pathname.includes('home.html')) {
+            scrollToHorrorSection();
+        } else {
+          window.location.href = 'home.html';
+          window.onload = function() {
+            scrollToHorrorSection();
+          };
+        }
+    });
+});
+  </script>
+</body>
+</html>

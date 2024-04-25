@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Video</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/video.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+          <img src="2.jpeg" alt="Logo">
+        </div>
+        <div class="nav-buttons">
+            <input type="text" id="search" placeholder="Search..." >
+            <button id="Searchbtn">Search</button>
+          <a href="home.html"><button id="home">Home</button></a>
+          <a href="aboutus.html"><button id="about">About Us</button></a>
+          <button id="Horror">Horror</button>
+          <div class="dropdown">
+            <button id="account">Account</button>
+            <div class="dropdown-content">
+              <a href="#">Settings</a>
+              <a href="/?alert=logout_success">Logout</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    <video class="movie" controls autoplay>
+        <source src="Guardians.Of.The.Galaxy.Vol.3.2023.1080p.x264.English.Esubs.Vegamovies.to.mkv" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    
+    function scrollToHorrorSection() {
+        const horrorSection = document.querySelector('.Horror');
+        horrorSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+        const horrorButton = document.getElementById('Horror');
+
+    
+    horrorButton.addEventListener('click', function(event) {
+        event.preventDefault();
+        
+        if (window.location.pathname !== '/home.html') {
+            window.location.href = '/home.html';
+        } else {
+            scrollToHorrorSection();
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
